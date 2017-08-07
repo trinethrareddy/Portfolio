@@ -1,5 +1,5 @@
 ﻿/*==========================================================
-    Author      : Ranjithprabhu K
+    Author      : Trinethra Reddy Alamur
     Date Created: 24 Dec 2015
     Description : Base for Login module
     
@@ -26,4 +26,3 @@ login.config(["$stateProvider", function ($stateProvider) {
     });
 
 }]);
-

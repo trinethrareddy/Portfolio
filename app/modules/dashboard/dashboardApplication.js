@@ -1,5 +1,5 @@
 ﻿/*==========================================================
-    Author      : Ranjithprabhu K
+    Author      : Trinethra Reddy Alamur
     Date Created: 24 Dec 2015
     Description : Base for Dashboard Application module
     
@@ -9,7 +9,7 @@
 
  ===========================================================*/
 
-var dashboard = angular.module('dashboard', ['ui.router', 'ngAnimate','ngMaterial']);
+var dashboard = angular.module('dashboard', ['ui.router', 'ngAnimate', 'ngMaterial']);
 
 
 dashboard.config(["$stateProvider", function ($stateProvider) {
@@ -147,4 +147,3 @@ dashboard.config(["$stateProvider", function ($stateProvider) {
     });
 
 }]);
-

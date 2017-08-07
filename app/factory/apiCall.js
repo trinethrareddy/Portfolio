@@ -1,5 +1,5 @@
 ﻿/*==========================================================
-    Author      : Ranjithprabhu K
+    Author      : Trinethra Reddy Alamur
     Date Created: 27 Dec 2015
     Description : This service is to communicate with server for CRUD Operaions
     
@@ -15,7 +15,13 @@ app.service('apiService', ['$http', '$q', 'appSettings', function ($http, $q, ap
     //===========================GET RESOURCE==============================
     var get = function (module, parameter) {
         var deferred = $q.defer();
-        $http.get(apiBase + module, { params: parameter }, { headers: { 'Content-Type': 'application/json' } }).success(function (response) {
+        $http.get(apiBase + module, {
+            params: parameter
+        }, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).success(function (response) {
             deferred.resolve(response);
         }).catch(function (data, status, headers, config) { // <--- catch instead error
             deferred.reject(data.statusText);
@@ -30,7 +36,11 @@ app.service('apiService', ['$http', '$q', 'appSettings', function ($http, $q, ap
 
         var deferred = $q.defer();
 
-        $http.post(apiBase + module, parameter, { headers: { 'Content-Type': 'application/json' } }).success(function (response) {
+        $http.post(apiBase + module, parameter, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).success(function (response) {
 
             deferred.resolve(response);
 
@@ -49,7 +59,11 @@ app.service('apiService', ['$http', '$q', 'appSettings', function ($http, $q, ap
 
         var deferred = $q.defer();
 
-        $http.post(apiBase + module + '/' + parameter.id, parameter, { headers: { 'Content-Type': 'application/json' } }).success(function (response) {
+        $http.post(apiBase + module + '/' + parameter.id, parameter, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).success(function (response) {
 
             deferred.resolve(response);
 
@@ -67,7 +81,11 @@ app.service('apiService', ['$http', '$q', 'appSettings', function ($http, $q, ap
 
         var deferred = $q.defer();
 
-        $http.post(apiBase + module + '/' + parameter.id, parameter, { headers: { 'Content-Type': 'application/json' } }).success(function (response) {
+        $http.post(apiBase + module + '/' + parameter.id, parameter, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).success(function (response) {
 
             deferred.resolve(response);
 

@@ -1,5 +1,5 @@
 ﻿/*==========================================================
-   Author      : Ranjithprabhu K
+   Author      : Trinethra Reddy Alamur
    Date Created: 05 Jan 2016
    Description : To handle the service for Dashboard module
    
@@ -17,11 +17,11 @@ dashboard.service('dashboardService', ['$http', '$q', 'Flash', 'apiService', fun
     var accessLogin = function (parameters) {
         var deferred = $q.defer();
         apiService.get("users", parameters).then(function (response) {
-            if (response)
-                deferred.resolve(response);
-            else
-                deferred.reject("Something went wrong while processing your request. Please Contact Administrator.");
-        },
+                if (response)
+                    deferred.resolve(response);
+                else
+                    deferred.reject("Something went wrong while processing your request. Please Contact Administrator.");
+            },
             function (response) {
                 deferred.reject(response);
             });
@@ -32,11 +32,11 @@ dashboard.service('dashboardService', ['$http', '$q', 'Flash', 'apiService', fun
     var registerUser = function (parameters) {
         var deferred = $q.defer();
         apiService.create("users", parameters).then(function (response) {
-            if (response)
-                deferred.resolve(response);
-            else
-                deferred.reject("Something went wrong while processing your request. Please Contact Administrator.");
-        },
+                if (response)
+                    deferred.resolve(response);
+                else
+                    deferred.reject("Something went wrong while processing your request. Please Contact Administrator.");
+            },
             function (response) {
                 deferred.reject(response);
             });

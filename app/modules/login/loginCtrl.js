@@ -1,5 +1,5 @@
 ﻿/*==========================================================
-    Author      : Ranjithprabhu K
+    Author      : Trinethra Reddy Alamur
     Date Created: 24 Dec 2015
     Description : Controller to handle Login module
     Change Log
@@ -8,8 +8,8 @@
 
  ===========================================================*/
 
-login.controller("loginCtrl", ['$rootScope', '$scope', '$state', '$location', 'loginService', 'Flash','apiService',
-function ($rootScope, $scope, $state, $location, loginService, Flash, apiService) {
+login.controller("loginCtrl", ['$rootScope', '$scope', '$state', '$location', 'loginService', 'Flash', 'apiService',
+    function ($rootScope, $scope, $state, $location, loginService, Flash, apiService) {
         var vm = this;
 
         vm.getUser = {};
@@ -21,27 +21,25 @@ function ($rootScope, $scope, $state, $location, loginService, Flash, apiService
             if (data.Username == "admin") {
                 if (data.Password == "admin") {
                     $state.go('app.dashboard');
-                }
-                else
+                } else
                     Flash.create('danger', 'Invalid Password', 'large-text');
-            }
-            else
+            } else
                 Flash.create('danger', 'Invalid Username', 'large-text');
         };
 
         //get registration details
         vm.register = function () {
-            if (vm.setUser.confirmPassword == vm.setUser.Password){
+            if (vm.setUser.confirmPassword == vm.setUser.Password) {
                 loginService.registerUser(vm.setUser).then(function (response) {
                     if (response.message == 'success')
-                console.log('after post>>',response);
-                //if (response.length > 0)
-                //    $state.go('app');
-                //else
-                //    Flash.create('danger', 'Invalid Credentials', 'large-text');
-            });
+                        console.log('after post>>', response);
+                    //if (response.length > 0)
+                    //    $state.go('app');
+                    //else
+                    //    Flash.create('danger', 'Invalid Credentials', 'large-text');
+                });
             }
         };
 
-    }]);
-
+    }
+]);

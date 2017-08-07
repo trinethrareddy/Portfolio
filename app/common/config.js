@@ -1,5 +1,5 @@
 ﻿/*==========================================================
-    Author      : Ranjithprabhu K
+    Author      : Trinethra Reddy Alamur
     Date Created: 24 Dec 2015
     Description : Global configuration defined here
     
@@ -15,5 +15,5 @@ var appConfig = {
     dateFormat: "mm/dd/yy",
     apiBase: 'http://192.168.168.213:3000/api/',
     theme: 'skin-purple',
-    layout:""
+    layout: ""
 };

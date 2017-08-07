@@ -1,5 +1,5 @@
 ﻿/*==========================================================
-    Author      : Ranjithprabhu K
+    Author      : Trinethra Reddy Alamur
     Date Created: 13 Jan 2016
     Description : Controller to handle Achievement page
     Change Log
@@ -9,10 +9,10 @@
  ===========================================================*/
 
 dashboard.controller("AchievementController", ['$rootScope', '$scope', '$state', '$location', 'dashboardService', 'Flash',
-function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
-    var vm = this;
+    function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
+        var vm = this;
 
-    console.log("coming to Achievement controller");
+        console.log("coming to Achievement controller");
 
-}]);
-
+    }
+]);

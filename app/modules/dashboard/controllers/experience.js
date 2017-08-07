@@ -1,5 +1,5 @@
 ﻿/*==========================================================
-    Author      : Ranjithprabhu K
+    Author      : Trinethra Reddy Alamur
     Date Created: 13 Jan 2016
     Description : Controller to handle Experience page
     Change Log
@@ -9,10 +9,10 @@
  ===========================================================*/
 
 dashboard.controller("ExperienceController", ['$rootScope', '$scope', '$state', '$location', 'dashboardService', 'Flash',
-function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
-    var vm = this;
+    function ($rootScope, $scope, $state, $location, dashboardService, Flash) {
+        var vm = this;
 
-    console.log("coming to Experience controller");
+        console.log("coming to Experience controller");
 
-}]);
-
+    }
+]);
