@@ -17,19 +17,19 @@ dashboard.controller("HomeController", ['$rootScope', '$scope', '$state', '$loca
 
         vm.home.mainData = [{
                 title: "Projects",
-                value: "30+",
+                value: "5+",
                 theme: "aqua",
                 icon: "puzzle-piece"
             },
             {
                 title: "Designs",
-                value: "250+",
+                value: "10+",
                 theme: "red",
                 icon: "paint-brush"
             },
             {
                 title: "Awards",
-                value: "50+",
+                value: "3+",
                 theme: "green",
                 icon: "trophy"
             },
@@ -45,7 +45,7 @@ dashboard.controller("HomeController", ['$rootScope', '$scope', '$state', '$loca
         vm.home.skills = [{
                 title: "Design & Development",
                 theme: "aqua",
-                percentage: 80
+                percentage: 60
             },
             {
                 title: "Communication",
@@ -81,13 +81,13 @@ dashboard.controller("HomeController", ['$rootScope', '$scope', '$state', '$loca
 
         vm.home.tools = [{
                 Software: "Mongo DB",
-                Percentage: "80",
+                Percentage: "40",
                 theme: "yellow",
                 image: "mongodb"
             },
             {
                 Software: "Express JS",
-                Percentage: "75",
+                Percentage: "65",
                 theme: "aqua",
                 image: "express",
                 progressbar: "blue"
@@ -101,7 +101,7 @@ dashboard.controller("HomeController", ['$rootScope', '$scope', '$state', '$loca
             },
             {
                 Software: "Node JS",
-                Percentage: "83",
+                Percentage: "63",
                 theme: "lime",
                 image: "node",
                 progressbar: "blue"
@@ -115,7 +115,7 @@ dashboard.controller("HomeController", ['$rootScope', '$scope', '$state', '$loca
             },
             {
                 Software: "Type Script",
-                Percentage: "70",
+                Percentage: "60",
                 theme: "Gray",
                 image: "typescript",
                 progressbar: "blue"
@@ -125,13 +125,6 @@ dashboard.controller("HomeController", ['$rootScope', '$scope', '$state', '$loca
                 Percentage: "80",
                 theme: "yellow",
                 image: "jquery",
-                progressbar: "blue"
-            },
-            {
-                Software: "Joomla",
-                Percentage: "85",
-                theme: "red",
-                image: "joomla",
                 progressbar: "blue"
             },
             {
@@ -162,24 +155,10 @@ dashboard.controller("HomeController", ['$rootScope', '$scope', '$state', '$loca
                 progressbar: "blue"
             },
             {
-                Software: "Photo Shop",
+                Software: "Ionic",
                 Percentage: "90",
                 theme: "maroon",
                 image: "photoshop",
-                progressbar: "blue"
-            },
-            {
-                Software: "Corel Draw",
-                Percentage: "95",
-                theme: "Gray",
-                image: "coreldraw",
-                progressbar: "blue"
-            },
-            {
-                Software: "Flash",
-                Percentage: "65",
-                theme: "yellow",
-                image: "flash",
                 progressbar: "blue"
             }
         ];
