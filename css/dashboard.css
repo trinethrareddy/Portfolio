@@ -184,6 +184,10 @@ body.hold-transition .main-header .logo {
   padding-right: 15px;
 }
 
+.skils-view .content {
+  min-height: 100px !important;
+}
+
 
 /* H1 - H6 font */
 

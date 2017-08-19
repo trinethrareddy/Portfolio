@@ -17,13 +17,13 @@ dashboard.controller("SkillController", ['$rootScope', '$scope', '$state', '$loc
         //development stack
         vm.skills.development = [{
                 Software: "Mongo DB",
-                Percentage: "10",
+                Percentage: "40",
                 theme: "yellow",
                 image: "mongodb"
             },
             {
                 Software: "Express JS",
-                Percentage: "15",
+                Percentage: "45",
                 theme: "aqua",
                 image: "express"
             },
@@ -35,7 +35,7 @@ dashboard.controller("SkillController", ['$rootScope', '$scope', '$state', '$loc
             },
             {
                 Software: "Node JS",
-                Percentage: "25",
+                Percentage: "45",
                 theme: "purple",
                 image: "node"
             },
@@ -47,13 +47,13 @@ dashboard.controller("SkillController", ['$rootScope', '$scope', '$state', '$loc
             },
             {
                 Software: "Type Script",
-                Percentage: "30",
+                Percentage: "40",
                 theme: "teal",
                 image: "typescript"
             },
             {
                 Software: "jQuery & AJAX",
-                Percentage: "50",
+                Percentage: "70",
                 theme: "yellow",
                 image: "jquery"
             },
