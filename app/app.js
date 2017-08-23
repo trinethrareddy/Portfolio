@@ -27,9 +27,17 @@ app.config(['$stateProvider', '$locationProvider', '$urlRouterProvider', functio
             data: {
                 pageTitle: 'Login'
             }
+        }).state('mainHome', {
+            url: '/mainHome',
+            templateUrl: 'app/common/mainHome.html',
+            controller: 'mainHomeCtrl',
+            controllerAs: 'vm',
+            data: {
+                pageTitle: 'Home'
+            }
         });
 
-    $urlRouterProvider.otherwise('login');
+    $urlRouterProvider.otherwise('mainHome');
 
     //$urlRouterProvider.otherwise('app/dashboard');
     //$urlRouterProvider.otherwise('/app/dashboard');

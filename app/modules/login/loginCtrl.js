@@ -18,8 +18,8 @@ login.controller("loginCtrl", ['$rootScope', '$scope', '$state', '$location', 'l
 
         //access login
         vm.login = function (data) {
-            if (data.Username == "admin") {
-                if (data.Password == "admin") {
+            if (data.Username == "thinu") {
+                if (data.Password == "thinu") {
                     $state.go('app.dashboard');
                 } else
                     Flash.create('danger', 'Invalid Password', 'large-text');

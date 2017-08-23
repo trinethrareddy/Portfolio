@@ -1,5 +1,48 @@
 ﻿/*===padding styles=====*/
 
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+div.main-sec {
+    background-size: 100% 100%;
+    background-image: url("../images/homebg.jpg");
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.main-text-css {
+    color: #fff;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: fantasy;
+    margin: 10px;
+}
+
+.light-orange-color {
+    color: #e74a25;
+}
+
+.home-img-avtar {
+    width: 150px;
+    height: 150px;
+    margin: 1px auto;
+    border: 3px solid rgb(238, 97, 46);
+}
+
 .padding-none {
     padding: 0px!important;
 }
