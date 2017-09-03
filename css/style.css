@@ -24,6 +24,10 @@ div.main-sec {
     z-index: 100;
 }
 
+.white-color {
+    color: #fff;
+}
+
 .fa-arrow-right {
     color: rgb(238, 97, 46);
 }
