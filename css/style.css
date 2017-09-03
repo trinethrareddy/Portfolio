@@ -24,6 +24,10 @@ div.main-sec {
     z-index: 100;
 }
 
+.fa-arrow-right {
+    color: rgb(238, 97, 46);
+}
+
 .main-text-css {
     color: #fff;
     font-size: 40px;

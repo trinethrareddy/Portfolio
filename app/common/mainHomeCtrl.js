@@ -1,5 +1,8 @@
-app.controller("mainHomeCtrl", ['$rootScope', '$scope', '$state', '$location', 'Flash', 'appSettings',
-    function ($rootScope, $scope, $state, $location, Flash, appSettings) {
+app.controller("mainHomeCtrl", ['$state',
+    function ($state) {
         var vm = this;
+        vm.fnGotoDashboard = function () {
+            $state.go('app.dashboard');
+        }
     }
 ]);
