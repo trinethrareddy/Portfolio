@@ -178,7 +178,7 @@ dashboard.controller("EducationController", ['$rootScope', '$scope', '$state', '
         var sslc = document.getElementById("sslcChart").getContext("2d");
 
         vm.meData = {
-            labels: ["Sem 1", "Sem 2", "Sem 3", "Sem 4"],
+            labels: ["Sem 2-1", "Sem 2-2", "Sem 3-1", "Sem 3-2", "Sem 4-1", "Sem 4-2"],
             datasets: [{
                 label: "My ME Semester Marks",
                 fillColor: "rgba(0,192,239,0.2)",
@@ -187,21 +187,21 @@ dashboard.controller("EducationController", ['$rootScope', '$scope', '$state', '
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(220,220,220,1)",
-                data: [7.5, 8.4, 7.6, 10.0]
+                data: [74.5, 81.7, 82.7, 75.5, 81.7, 76.0]
             }]
         };
 
         vm.mscData = {
-            labels: ["Sem 1 & 2", "Sem 3", "Sem 4", "Sem 5", "Sem 6", "Sem 7", "Sem 8", "Sem 9", "Sem 10"],
+            labels: ["Sem 1 & 2", "Sem 3", "Sem 4", "Sem 5", "Sem 6"],
             datasets: [{
-                label: "My MSC Semester Marks",
+                label: "Diploma Semester Marks",
                 fillColor: "rgba(243,156,18,0.2)",
                 strokeColor: "rgba(243,156,18,1)",
                 pointColor: "rgba(200,127,10,1)",
                 pointStrokeColor: "#fff",
                 pointHighlightFill: "#fff",
                 pointHighlightStroke: "rgba(220,220,220,1)",
-                data: [7.7, 7.8, 8.5, 8.1, 8.1, 10.0, 7.8, 8.3, 10.0]
+                data: [68.1, 72.3, 75.7, 98.3, 84.7]
             }]
         };
 
