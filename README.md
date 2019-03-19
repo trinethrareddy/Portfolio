@@ -4,15 +4,7 @@ All components included in this dashboard template has been developed to bring a
 Angular Bootstrap Dashboard can be used in any type of web applications dashboard. 
 Angular Bootstrap Dashboard uses ui-router for routing purposes.
 
-## Get The Dashboard
 
-* [Demo] (http://dashboard.ranjithprabhu.in)
-
-* [Download Source]  (https://github.com/Trinethra Reddy Alamurk/Angular-Bootstrap-Dashboard/archive/master.zip)
-
-* Username: admin
-
-* Password: admin
 
 ## Features
 * Multiple Themes
